@@ -1,9 +1,0 @@
-<svg width="1200" height="800" viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
-  <rect width="1200" height="800" rx="40" fill="#111827"/>
-  <rect x="90" y="90" width="1020" height="620" rx="28" fill="#0f172a" stroke="#34d399" stroke-width="6"/>
-  <rect x="140" y="160" width="220" height="430" rx="20" fill="#14b8a6"/>
-  <rect x="390" y="160" width="300" height="180" rx="20" fill="#f59e0b"/>
-  <rect x="390" y="370" width="300" height="220" rx="20" fill="#6366f1"/>
-  <rect x="730" y="160" width="330" height="430" rx="20" fill="#1f2937"/>
-  <text x="140" y="660" fill="#f8fafc" font-size="48" font-family="Arial, sans-serif">Project Two</text>
-</svg>
