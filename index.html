@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="vi" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quang Bao</title>
+    <meta
+      name="description"
+      content="Portfolio cá nhân với các section About, Projects, Certificates và Contact."
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'ui-sans-serif', 'system-ui'],
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+  </head>
+  <body class="bg-slate-50 text-slate-900 transition-colors duration-300 dark:bg-slate-950 dark:text-slate-100">
+    <header class="sticky top-0 z-50 border-b border-slate-200/80 bg-white/80 backdrop-blur dark:border-slate-800 dark:bg-slate-950/80">
+      <nav class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
+        <a href="#about" class="text-lg font-semibold tracking-wide text-slate-900 transition hover:text-cyan-600 dark:text-white dark:hover:text-cyan-400">
+          <span class="mr-2 inline-block h-3 w-3 rounded-full bg-cyan-500"></span>
+          Quang Bao
+        </a>
+
+        <div class="hidden items-center gap-6 md:flex">
+          <a href="#about" class="nav-link text-sm font-medium text-slate-600 transition hover:text-cyan-600 dark:text-slate-300 dark:hover:text-cyan-400" data-target="about">About</a>
+          <a href="#projects" class="nav-link text-sm font-medium text-slate-600 transition hover:text-cyan-600 dark:text-slate-300 dark:hover:text-cyan-400" data-target="projects">Projects</a>
+          <a href="#certificates" class="nav-link text-sm font-medium text-slate-600 transition hover:text-cyan-600 dark:text-slate-300 dark:hover:text-cyan-400" data-target="certificates">Certificates</a>
+          <a href="#contact" class="nav-link text-sm font-medium text-slate-600 transition hover:text-cyan-600 dark:text-slate-300 dark:hover:text-cyan-400" data-target="contact">Contact</a>
+        </div>
+
+        <div class="flex items-center gap-2">
+          <button id="themeToggle" class="rounded-full border border-slate-300 p-2 text-slate-700 transition hover:border-cyan-500 hover:text-cyan-600 dark:border-slate-700 dark:text-slate-200" aria-label="Toggle dark mode">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2m0 14v2m9-9h-2M5 12H3m6.5-6.5L8 8m8 8l-1.5-1.5M8 16l-1.5 1.5m8-8l1.5-1.5" />
+            </svg>
+          </button>
+
+          <button id="mobileMenuButton" class="rounded-full border border-slate-300 p-2 text-slate-700 transition hover:border-cyan-500 hover:text-cyan-600 dark:border-slate-700 dark:text-slate-200 md:hidden" aria-label="Open menu">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4 7h16M4 12h16M4 17h16" />
+            </svg>
+          </button>
+        </div>
+      </nav>
+
+      <div id="mobileMenu" class="hidden border-t border-slate-200 bg-white/95 px-4 py-4 dark:border-slate-800 dark:bg-slate-950/95 md:hidden">
+        <div class="flex flex-col gap-3">
+          <a href="#about" class="nav-link-mobile text-sm font-medium text-slate-700 transition hover:text-cyan-600 dark:text-slate-200" data-target="about">About</a>
+          <a href="#projects" class="nav-link-mobile text-sm font-medium text-slate-700 transition hover:text-cyan-600 dark:text-slate-200" data-target="projects">Projects</a>
+          <a href="#certificates" class="nav-link-mobile text-sm font-medium text-slate-700 transition hover:text-cyan-600 dark:text-slate-200" data-target="certificates">Certificates</a>
+          <a href="#contact" class="nav-link-mobile text-sm font-medium text-slate-700 transition hover:text-cyan-600 dark:text-slate-200" data-target="contact">Contact</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- SECTION 1: About - Replace this content with your personal introduction and CV path -->
+      <section id="about" class="section-target mx-auto flex max-w-7xl flex-col gap-10 px-4 py-20 sm:px-6 lg:flex-row lg:items-center lg:px-8 lg:py-24">
+        <div class="max-w-2xl">
+          <p class="mb-4 inline-flex rounded-full border border-cyan-500/30 bg-cyan-500/10 px-3 py-1 text-sm font-medium text-cyan-700 dark:text-cyan-300">Software Engineer</p>
+          <h1 class="text-4xl font-semibold tracking-tight sm:text-5xl lg:text-6xl">
+            Hi, I’m <span class="text-cyan-600 dark:text-cyan-400">Quang Bao</span>.
+          </h1>
+          <p class="mt-6 text-lg leading-8 text-slate-600 dark:text-slate-300">
+            I'm a software engineer who is deeply interested in Artificial Intelligence, system architecture, and the mathematical foundations behind intelligent systems.My long-term goal is to pursue graduate studies and research opportunities in AI-related fields, particularly in France, China, or Korea.
+          </p>
+          <div class="mt-8 flex flex-wrap gap-3">
+            <a href="./assets/NguyenQuangBao-CV.pdf" target="_blank" rel="noreferrer" class="rounded-full bg-cyan-600 px-5 py-3 text-sm font-semibold text-white transition hover:bg-cyan-700">
+              Download CV
+            </a>
+            <a href="#projects" class="rounded-full border border-slate-300 px-5 py-3 text-sm font-semibold text-slate-700 transition hover:border-cyan-500 hover:text-cyan-600 dark:border-slate-700 dark:text-slate-200">
+              Explore Projects
+            </a>
+          </div>
+          <div class="mt-8 flex flex-wrap gap-2">
+            <span class="rounded-full bg-slate-200 px-3 py-1 text-sm text-slate-700 dark:bg-slate-800 dark:text-slate-200">Java</span>
+            <span class="rounded-full bg-slate-200 px-3 py-1 text-sm text-slate-700 dark:bg-slate-800 dark:text-slate-200">ReactJS</span>
+            <span class="rounded-full bg-slate-200 px-3 py-1 text-sm text-slate-700 dark:bg-slate-700 dark:text-slate-200">Python</span>
+            <span class="rounded-full bg-slate-200 px-3 py-1 text-sm text-slate-700 dark:bg-slate-800 dark:text-slate-200">Django</span>
+            <span class="rounded-full bg-slate-200 px-3 py-1 text-sm text-slate-700 dark:bg-slate-800 dark:text-slate-200">MySQL</span>
+            <span class="rounded-full bg-slate-200 px-3 py-1 text-sm text-slate-700 dark:bg-slate-800 dark:text-slate-200">C++</span>
+            <span class="rounded-full bg-slate-200 px-3 py-1 text-sm text-slate-700 dark:bg-slate-800 dark:text-slate-200">Flask</span>
+          </div>
+        </div>
+
+        <div class="w-full max-w-md rounded-3xl border border-slate-200 bg-white p-6 shadow-xl shadow-slate-200/60 dark:border-slate-800 dark:bg-slate-900 dark:shadow-none">
+          <div class="rounded-2xl bg-gradient-to-br from-cyan-500 via-sky-500 to-indigo-600 p-10 text-center text-white">
+            <div class="mx-auto flex h-24 w-24 items-center justify-center rounded-full border-4 border-white/40 text-3xl font-semibold">Bao</div>
+            <h2 class="mt-6 text-2xl font-semibold">Backend & Data Enthusiast</h2>
+            <p class="mt-3 text-sm text-cyan-50">I enjoy building systems and processes for smooth data operations.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 2: Projects - Update project title, description, GitHub links, and image paths here -->
+      <section id="projects" class="section-target mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
+        <div class="mb-10 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+          <div>
+            <p class="text-sm font-semibold uppercase tracking-[0.25em] text-cyan-600 dark:text-cyan-400">Projects</p>
+            <h2 class="text-3xl font-semibold sm:text-4xl">Projects</h2>
+          </div>
+        </div>
+
+        <div class="grid gap-8">
+          <a href="https://github.com/Viet05/Team-02---The-IT-Career-Path-VN" target="_blank" rel="noreferrer" class="group overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-xl dark:border-slate-800 dark:bg-slate-900">
+            <div class="grid gap-6 p-6 md:grid-cols-[1.2fr_0.8fr] md:items-center md:p-8">
+              <div class="order-2 md:order-1">
+                <p class="text-sm font-medium uppercase tracking-[0.2em] text-cyan-600 dark:text-cyan-400">Web App</p>
+                <h3 class="mt-2 text-2xl font-semibold">The IT Career Path Vietnam - Group Project</h3>
+                <p class="mt-3 text-slate-600 dark:text-slate-300">A digital platform allow user to choose a preferable path and browse the Vietnam's IT market.</p>
+                <div class="mt-5 flex flex-wrap gap-2">
+                  <span class="rounded-full bg-slate-100 px-3 py-1 text-sm text-slate-700 dark:bg-slate-800 dark:text-slate-200">ReactJS</span>
+                  <span class="rounded-full bg-slate-100 px-3 py-1 text-sm text-slate-700 dark:bg-slate-800 dark:text-slate-200">Spring Boot</span>
+                  <span class="rounded-full bg-slate-100 px-3 py-1 text-sm text-slate-700 dark:bg-slate-800 dark:text-slate-200">MySQL</span>
+                  <span class="rounded-full bg-slate-100 px-3 py-1 text-sm text-slate-700 dark:bg-slate-800 dark:text-slate-200">Python</span>
+                  <span class="rounded-full bg-slate-100 px-3 py-1 text-sm text-slate-700 dark:bg-slate-800 dark:text-slate-200">BeautifulSoup</span>
+                  <span class="rounded-full bg-slate-100 px-3 py-1 text-sm text-slate-700 dark:bg-slate-800 dark:text-slate-200">N8N</span>
+                </div>
+              </div>
+              <div class="order-1 md:order-2">
+                <img src="./assets/images/it_career_path.jpg" alt="Project One preview" class="h-full w-full rounded-2xl object-cover" />
+              </div>
+            </div>
+          </a>
+
+          <a href="https://github.com/Quangbao123/react-fakestore-app" target="_blank" rel="noreferrer" class="group overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-xl dark:border-slate-800 dark:bg-slate-900">
+            <div class="grid gap-6 p-6 md:grid-cols-[1.2fr_0.8fr] md:items-center md:p-8">
+              <div class="order-2 md:order-1">
+                <p class="text-sm font-medium uppercase tracking-[0.2em] text-cyan-600 dark:text-cyan-400">Data Dashboard</p>
+                <h3 class="mt-2 text-2xl font-semibold">React FakeStore App</h3>
+                <p class="mt-3 text-slate-600 dark:text-slate-300">Develop a web application and integrate the API from FakeStore API</p>
+                <div class="mt-5 flex flex-wrap gap-2">
+                  <span class="rounded-full bg-slate-100 px-3 py-1 text-sm text-slate-700 dark:bg-slate-800 dark:text-slate-200">ReactJS</span>
+                  <span class="rounded-full bg-slate-100 px-3 py-1 text-sm text-slate-700 dark:bg-slate-800 dark:text-slate-200">Fakestore API</span>
+                </div>
+              </div>
+              <div class="order-1 md:order-2">
+                <img src="./assets/images/react_fakestore_app.png" alt="Project Two preview" class="h-full w-full rounded-2xl object-cover" />
+              </div>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <!-- SECTION 3: Certificates - Replace certificate names and PDF file paths here -->
+      <section id="certificates" class="section-target mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
+        <div class="mb-10 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+          <div>
+            <p class="text-sm font-semibold uppercase tracking-[0.25em] text-cyan-600 dark:text-cyan-400">Certificates</p>
+            <h2 class="text-3xl font-semibold sm:text-4xl">Certificates & Courses</h2>
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <button class="filter-btn rounded-full border border-slate-300 px-4 py-2 text-sm font-medium text-slate-700 transition hover:border-cyan-500 hover:text-cyan-600 dark:border-slate-700 dark:text-slate-200" data-category="all">All</button>
+            <button class="filter-btn rounded-full border border-slate-300 px-4 py-2 text-sm font-medium text-slate-700 transition hover:border-cyan-500 hover:text-cyan-600 dark:border-slate-700 dark:text-slate-200" data-category="google">Google</button>
+            <button class="filter-btn rounded-full border border-slate-300 px-4 py-2 text-sm font-medium text-slate-700 transition hover:border-cyan-500 hover:text-cyan-600 dark:border-slate-700 dark:text-slate-200" data-category="data">Data</button>
+            <button class="filter-btn rounded-full border border-slate-300 px-4 py-2 text-sm font-medium text-slate-700 transition hover:border-cyan-500 hover:text-cyan-600 dark:border-slate-700 dark:text-slate-200" data-category="assessment">Assessment</button>
+            <button class="filter-btn rounded-full border border-slate-300 px-4 py-2 text-sm font-medium text-slate-700 transition hover:border-cyan-500 hover:text-cyan-600 dark:border-slate-700 dark:text-slate-200" data-category="ml">MLearning</button>
+            <button class="filter-btn rounded-full border border-slate-300 px-4 py-2 text-sm font-medium text-slate-700 transition hover:border-cyan-500 hover:text-cyan-600 dark:border-slate-700 dark:text-slate-200" data-category="language">Language</button>
+          </div>
+        </div>
+
+        <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+          <article class="certificate-card rounded-3xl border border-slate-200 bg-white p-6 shadow-sm transition dark:border-slate-800 dark:bg-slate-900" data-category="google">
+            <p class="text-sm font-semibold uppercase tracking-[0.2em] text-cyan-600 dark:text-cyan-400">Google</p>
+            <h3 class="mt-3 text-xl font-semibold">Google Data Analytics</h3>
+            <p class="mt-2 text-slate-600 dark:text-slate-300">Google · 2025</p>
+            <a href="./assets/certificates/Google Data Analytics.pdf" target="_blank" rel="noreferrer" class="mt-5 inline-flex rounded-full bg-slate-950 px-4 py-2 text-sm font-semibold text-white transition hover:bg-cyan-600 dark:bg-slate-100 dark:text-slate-900">Xem PDF</a>
+          </article>
+
+          <article class="certificate-card rounded-3xl border border-slate-200 bg-white p-6 shadow-sm transition dark:border-slate-800 dark:bg-slate-900" data-category="google">
+            <p class="text-sm font-semibold uppercase tracking-[0.2em] text-cyan-600 dark:text-cyan-400">Google</p>
+            <h3 class="mt-3 text-xl font-semibold">Google Project Management</h3>
+            <p class="mt-2 text-slate-600 dark:text-slate-300">Google · 2025</p>
+            <a href="./assets/certificates/Google Project Management.pdf" target="_blank" rel="noreferrer" class="mt-5 inline-flex rounded-full bg-slate-950 px-4 py-2 text-sm font-semibold text-white transition hover:bg-cyan-600 dark:bg-slate-100 dark:text-slate-900">Xem PDF</a>
+          </article>
+
+          <article class="certificate-card rounded-3xl border border-slate-200 bg-white p-6 shadow-sm transition dark:border-slate-800 dark:bg-slate-900" data-category="data">
+            <p class="text-sm font-semibold uppercase tracking-[0.2em] text-cyan-600 dark:text-cyan-400">Data</p>
+            <h3 class="mt-3 text-xl font-semibold">Xom Data SQL Beginner</h3>
+            <p class="mt-2 text-slate-600 dark:text-slate-300">XomData · 2026</p>
+            <a href="./assets/certificates/XomData SQL Beginner.pdf" target="_blank" rel="noreferrer" class="mt-5 inline-flex rounded-full bg-slate-950 px-4 py-2 text-sm font-semibold text-white transition hover:bg-cyan-600 dark:bg-slate-100 dark:text-slate-900">Xem PDF</a>
+          </article>
+
+          <article class="certificate-card rounded-3xl border border-slate-200 bg-white p-6 shadow-sm transition dark:border-slate-800 dark:bg-slate-900" data-category="data">
+            <p class="text-sm font-semibold uppercase tracking-[0.2em] text-cyan-600 dark:text-cyan-400">Data</p>
+            <h3 class="mt-3 text-xl font-semibold">Xom Data SQL Intermediate</h3>
+            <p class="mt-2 text-slate-600 dark:text-slate-300">XomData · 2026</p>
+            <a href="./assets/certificates/XomData SQL Intermediate.pdf" target="_blank" rel="noreferrer" class="mt-5 inline-flex rounded-full bg-slate-950 px-4 py-2 text-sm font-semibold text-white transition hover:bg-cyan-600 dark:bg-slate-100 dark:text-slate-900">Xem PDF</a>
+          </article>
+
+          <article class="certificate-card rounded-3xl border border-slate-200 bg-white p-6 shadow-sm transition dark:border-slate-800 dark:bg-slate-900" data-category="assessment">
+            <p class="text-sm font-semibold uppercase tracking-[0.2em] text-cyan-600 dark:text-cyan-400">Assessment</p>
+            <h3 class="mt-3 text-xl font-semibold">FPT Talent Assessment</h3>
+            <p class="mt-2 text-slate-600 dark:text-slate-300">FPT Software · 2026</p>
+            <a href="./assets/certificates/FPT Talent Assessment.pdf" target="_blank" rel="noreferrer" class="mt-5 inline-flex rounded-full bg-slate-950 px-4 py-2 text-sm font-semibold text-white transition hover:bg-cyan-600 dark:bg-slate-100 dark:text-slate-900">Xem PDF</a>
+          </article>
+        </div>
+      </section>
+
+      <!-- SECTION 4: Contact - Swap in your email and social links -->
+      <section id="contact" class="section-target mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
+        <div class="rounded-3xl border border-slate-200 bg-white p-8 shadow-sm dark:border-slate-800 dark:bg-slate-900 sm:p-10">
+          <p class="text-sm font-semibold uppercase tracking-[0.25em] text-cyan-600 dark:text-cyan-400">Contact</p>
+          <h2 class="mt-3 text-3xl font-semibold sm:text-4xl">Đừng ngại kết nối</h2>
+          <p class="mt-4 max-w-2xl text-slate-600 dark:text-slate-300">Nếu bạn muốn hợp tác, trao đổi dự án hoặc chỉ đơn giản là chào hỏi, hãy liên hệ qua các kênh dưới đây.</p>
+
+          <div class="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            <a href="mailto:nguyenquangbao575@gmail.com" class="rounded-2xl border border-slate-200 p-4 transition hover:border-cyan-500 hover:text-cyan-600 dark:border-slate-800">
+              <div class="text-xl font-semibold">Email</div>
+              <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">nguyenquangbao575@gmail.com</p>
+            </a>
+            <a href="https://facebook.com" target="_blank" rel="noreferrer" class="rounded-2xl border border-slate-200 p-4 transition hover:border-cyan-500 hover:text-cyan-600 dark:border-slate-800">
+              <div class="text-xl font-semibold">Facebook</div>
+              <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">facebook.com/yourname</p>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noreferrer" class="rounded-2xl border border-slate-200 p-4 transition hover:border-cyan-500 hover:text-cyan-600 dark:border-slate-800">
+              <div class="text-xl font-semibold">LinkedIn</div>
+              <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">linkedin.com/in/yourname</p>
+            </a>
+            <a href="https://www.instagram.com/winng_uyen05/" target="_blank" rel="noreferrer" class="rounded-2xl border border-slate-200 p-4 transition hover:border-cyan-500 hover:text-cyan-600 dark:border-slate-800">
+              <div class="text-xl font-semibold">Instagram</div>
+              <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">@winng_uyen05</p>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="border-t border-slate-200 px-4 py-6 text-center text-sm text-slate-600 dark:border-slate-800 dark:text-slate-300">
+      © 2026 Quang Bao. Built with HTML, Tailwind CSS, and Vanilla JavaScript.
+    </footer>
+
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
