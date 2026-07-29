@@ -33,3 +33,31 @@ body {
 .certificate-card.is-hidden {
   display: none;
 }
+
+/* Keep certificate thumbnails in original full color and consistent size */
+.certificate-thumb {
+  height: 180px; /* outer thumbnail container height (includes padding)
+                     change if you want larger thumbnails */
+  padding: 10px; /* space between image and card border */
+  box-sizing: border-box;
+  background: transparent;
+}
+
+.certificate-card .certificate-thumb img {
+  filter: none !important;
+  -webkit-filter: none !important;
+  mix-blend-mode: normal !important;
+  image-rendering: optimizeQuality;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px; /* rounded corners for the image itself */
+}
+
+@media (min-width: 768px) {
+  .certificate-thumb {
+    height: 200px;
+    padding: 0px;
+  }
+}

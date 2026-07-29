@@ -87,3 +87,21 @@ filterButtons.forEach((button) => {
 });
 
 setActiveLink('about');
+document.addEventListener("DOMContentLoaded", () => {
+  const grid = document.getElementById("certificate-grid");
+  if (!grid) return;
+
+  const cards = Array.from(grid.getElementsByClassName("certificate-card"));
+
+  cards.sort((a, b) => {
+    // Lấy chuỗi năm từ đoạn text (ví dụ: "FPT Software · 2026")
+    const yearA = parseInt(a.querySelector("p.mt-2").textContent.match(/\d{4}/)?.[0] || "0");
+    const yearB = parseInt(b.querySelector("p.mt-2").textContent.match(/\d{4}/)?.[0] || "0");
+    
+    // Sắp xếp giảm dần (Mới nhất lên trước)
+    return yearB - yearA;
+  });
+
+  // Gắn lại vào DOM theo thứ tự mới
+  cards.forEach(card => grid.appendChild(card));
+});
